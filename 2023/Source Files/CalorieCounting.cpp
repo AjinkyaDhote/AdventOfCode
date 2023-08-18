@@ -33,6 +33,7 @@ int Advent::Solutions2023::CalorieCounting()
 	}
 
 	std::cout << "The highest amount of calories carried by the elf are " << previousCalorieCount << std::endl;
+	file.close();
 
 	return 0;
 }
