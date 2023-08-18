@@ -146,8 +146,8 @@ unsigned long long CaluculatePowerConsumption()
 		}
 	}
 
-	unsigned long long gamma = std::stoull( gammastr, 0, 2);
-	unsigned long long epsilon = std::stoull( epsilonstr, 0, 2 );
+	unsigned long long gamma = std::stoull( gammastr, nullptr, 2);
+	unsigned long long epsilon = std::stoull( epsilonstr, nullptr, 2 );
 
 	return gamma * epsilon;
 
@@ -234,10 +234,6 @@ unsigned long long CalculateLifeSupportRating()
 
 	std::map<int, std::string> ResultMap;
 
-
-	int countofZeroes;
-	int countofOnes;
-
 	//OpenFile
 	std::ifstream fin( "input3.txt" );
 	std::string line;
@@ -268,8 +264,8 @@ unsigned long long CalculateLifeSupportRating()
 	std::string CO2ScrubberRatingStr = CalculateCO2ScrubberRating( MapOfZeroes, MapOfOnes );
 	
 
-	unsigned long long OxygenGeneratorRating = std::stoull( OxygenGeneratorRatingStr, 0, 2 );
-	unsigned long long CO2ScrubberRating = std::stoull( CO2ScrubberRatingStr, 0, 2 );
+	unsigned long long OxygenGeneratorRating = std::stoull( OxygenGeneratorRatingStr, nullptr, 2 );
+	unsigned long long CO2ScrubberRating = std::stoull( CO2ScrubberRatingStr, nullptr, 2 );
 
 	return OxygenGeneratorRating * CO2ScrubberRating;
 }
@@ -521,40 +517,48 @@ std::vector<int> CalculateBingoScore()
 
 
 
+//int main()
+//{
+//	//Fill the vector by reading the file
+//	//int answer = CalculateDepthMeasurementIncrease();
+//	//int answerSlidingWindow = CalculateDepthMeasurementIncreaseSlidingWindow();
+//	//int answerHorizontalAndDepth = CalculateHorizontalandDepthPoisition();
+//	//unsigned long long powerConsumption = CaluculatePowerConsumption();
+//	//unsigned long long lifeSupportRating = CalculateLifeSupportRating();
+//	//std::vector<int>BingoScores = CalculateBingoScore();
+//	//std::cout << answer << std::endl;
+//	//std::cout << answerSlidingWindow << std::endl;
+//	//std::cout << answerHorizontalAndDepth << std::endl;
+//	//std::cout << powerConsumption << std::endl;
+//	//std::cout << "lifeSupportRating -> " << lifeSupportRating << std::endl;
+//	//std::cout << "BingoScoreFirstPuzzle -> " << BingoScores[0] << std::endl;
+//	//std::cout << "BingoScoreSecondPuzzle -> " << BingoScores[1] << std::endl;
+//
+//	//HydroThermalVentures hydro;
+//	//std::vector<std::string> Input = hydro.ReadInput("Input5.txt");
+//	//hydro.ParseInput(Input);
+//
+//	//Puzzle6 puzzle6;
+//	//std::vector<std::string> Input = puzzle6.ReadInput( "Input6.txt" );
+//	//size_t NumberOfDays = 256;
+//	//int64_t Fishes = puzzle6.CountLanternFishOptimal(Input, NumberOfDays);
+//	//std::cout << "-------------Solution for Puzzle 6-----------------\n\n";
+//	//std::cout << "Puzzle 1\n";
+//	//std::cout << "Total number of fishes after " << NumberOfDays << " Days" << " - " << Fishes << "\n";
+//
+//	//Puzzle 7 -------------------------------------------------------
+//	Puzzle7 puzzle7;
+//	std::vector<std::string> Input = puzzle7.ReadInput( "Input7.txt" );
+//	int LeaseFuelPossible = puzzle7.CalculateLeastFuelPossible( Input[0]);
+//	//print LeastFuelPossible
+//
+//	return 0;
+//}
+
+#include "2023/Header Files/Source.h"
+
 int main()
 {
-	//Fill the vector by reading the file
-	//int answer = CalculateDepthMeasurementIncrease();
-	//int answerSlidingWindow = CalculateDepthMeasurementIncreaseSlidingWindow();
-	//int answerHorizontalAndDepth = CalculateHorizontalandDepthPoisition();
-	//unsigned long long powerConsumption = CaluculatePowerConsumption();
-	//unsigned long long lifeSupportRating = CalculateLifeSupportRating();
-	//std::vector<int>BingoScores = CalculateBingoScore();
-	//std::cout << answer << std::endl;
-	//std::cout << answerSlidingWindow << std::endl;
-	//std::cout << answerHorizontalAndDepth << std::endl;
-	//std::cout << powerConsumption << std::endl;
-	//std::cout << "lifeSupportRating -> " << lifeSupportRating << std::endl;
-	//std::cout << "BingoScoreFirstPuzzle -> " << BingoScores[0] << std::endl;
-	//std::cout << "BingoScoreSecondPuzzle -> " << BingoScores[1] << std::endl;
-
-	//HydroThermalVentures hydro;
-	//std::vector<std::string> Input = hydro.ReadInput("Input5.txt");
-	//hydro.ParseInput(Input);
-
-	//Puzzle6 puzzle6;
-	//std::vector<std::string> Input = puzzle6.ReadInput( "Input6.txt" );
-	//size_t NumberOfDays = 256;
-	//int64_t Fishes = puzzle6.CountLanternFishOptimal(Input, NumberOfDays);
-	//std::cout << "-------------Solution for Puzzle 6-----------------\n\n";
-	//std::cout << "Puzzle 1\n";
-	//std::cout << "Total number of fishes after " << NumberOfDays << " Days" << " - " << Fishes << "\n";
-
-	//Puzzle 7 -------------------------------------------------------
-	Puzzle7 puzzle7;
-	std::vector<std::string> Input = puzzle7.ReadInput( "Input7.txt" );
-	int LeaseFuelPossible = puzzle7.CalculateLeastFuelPossible( Input[0]);
-	//print LeastFuelPossible
-
+	Advent::Solutions2023::CalorieCounting();
 	return 0;
 }

@@ -13,11 +13,17 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="2023">
+      <UniqueIdentifier>{0527ace9-9faa-4815-ba5e-0d51b146af6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2023\Header Files">
+      <UniqueIdentifier>{3c208d98-6cbf-4337-83d2-d14a997fdad7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2023\Source Files">
+      <UniqueIdentifier>{1c65d22b-a26b-4bca-8f52-945e0ca6aacd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="HydroThermalVenture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -29,6 +35,12 @@
     </ClCompile>
     <ClCompile Include="Puzzle7.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="2023\Source Files\CalorieCounting.cpp">
+      <Filter>2023\Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -52,6 +64,9 @@
     </ClInclude>
     <ClInclude Include="Puzzle7.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="2023\Header Files\Source.h">
+      <Filter>2023\Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
