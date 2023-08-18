@@ -13,14 +13,14 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="2023">
+    <Filter Include="2022">
       <UniqueIdentifier>{0527ace9-9faa-4815-ba5e-0d51b146af6d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="2023\Header Files">
-      <UniqueIdentifier>{3c208d98-6cbf-4337-83d2-d14a997fdad7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2023\Source Files">
+    <Filter Include="2022\Source Files">
       <UniqueIdentifier>{1c65d22b-a26b-4bca-8f52-945e0ca6aacd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2022\Header Files">
+      <UniqueIdentifier>{86105d5b-8d7b-451d-a5fe-6dfad4ce30e8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -39,8 +39,8 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="2023\Source Files\CalorieCounting.cpp">
-      <Filter>2023\Source Files</Filter>
+    <ClCompile Include="2022\Source Files\CalorieCounting.cpp">
+      <Filter>2022\Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -65,8 +65,8 @@
     <ClInclude Include="Puzzle7.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="2023\Header Files\Source.h">
-      <Filter>2023\Header Files</Filter>
+    <ClInclude Include="2022\Header Files\Source.h">
+      <Filter>2022\Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
