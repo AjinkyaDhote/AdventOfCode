@@ -29,13 +29,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="2023\Source Files\CalorieCounting.cpp" />
+    <ClCompile Include="2022\Source Files\CalorieCounting.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="HydroThermalVenture.cpp" />
     <ClCompile Include="Puzzle6.cpp" />
@@ -156,7 +156,7 @@
     <Text Include="Input7.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="2023\Header Files\Source.h" />
+    <ClInclude Include="2022\Header Files\Source.h" />
     <ClInclude Include="HydroThermalVentures.h" />
     <ClInclude Include="Puzzle6.h" />
     <ClInclude Include="Puzzle7.h" />

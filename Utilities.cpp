@@ -37,7 +37,7 @@ std::vector<std::string> Utilities::ReadCommaSeperatedString( const std::string&
     return Tokens;
 }
 
-std::ifstream& Utilities::OpenFile( std::string filePath )
+std::ifstream Utilities::OpenFile( std::string filePath )
 {
 	std::ifstream file( filePath );
 	if ( file.is_open() )
@@ -45,7 +45,8 @@ std::ifstream& Utilities::OpenFile( std::string filePath )
 		return file;
 	}
 
-	HandleError();
+	perror( ("error while opening file " + filePath).c_str() );
+	exit( EXIT_FAILURE );
 }
 
 void Utilities::CloseFile( std::ifstream &file )
@@ -54,13 +55,9 @@ void Utilities::CloseFile( std::ifstream &file )
 	{
 		file.close();
 	}
-}
-
-
-
-void Utilities::HandleError()
-{
-	printf( "Value of errno: %d\n ", errno );
-	perror( "Message from perror" );
-	exit( EXIT_FAILURE );
+	else
+	{
+		perror( "error while closing file." );
+		exit( EXIT_FAILURE );
+	}
 }

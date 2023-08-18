@@ -17,10 +17,10 @@ public:
     static std::vector<std::string> ReadCommaSeperatedString( const std::string& string );
 
 	//File Handling
-	static std::ifstream& OpenFile( std::string filePath );
+	static std::ifstream OpenFile( std::string filePath );
 	static void CloseFile( std::ifstream &file );
 
 
 	//Error Handling
-	static void HandleError();
+	static void HandleError( int errNumber );
 };
