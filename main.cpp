@@ -169,12 +169,12 @@ std::string CalculateOxygenGeneratorRating( std::vector<std::string> MapOfZeroes
 	{
 		MapOfZeroes.clear();
 		MapOfOnes.clear();
-		for ( int i = 0; i < ResultMap.size(); i++ )
+		for (auto & i : ResultMap)
 		{
-			if ( ResultMap[i][j] == '0' )
-				MapOfZeroes.push_back( ResultMap[i] );
+			if ( i[j] == '0' )
+				MapOfZeroes.push_back( i );
 			else
-				MapOfOnes.push_back( ResultMap[i] );
+				MapOfOnes.push_back( i );
 		}
 
 		ResultMap.clear();
@@ -204,12 +204,12 @@ std::string CalculateCO2ScrubberRating( std::vector<std::string> MapOfZeroes, st
 	{
 		MapOfZeroes.clear();
 		MapOfOnes.clear();
-		for ( int i = 0; i < ResultMap.size(); i++ )
+		for (auto & i : ResultMap)
 		{
-			if ( ResultMap[i][j] == '0' )
-				MapOfZeroes.push_back( ResultMap[i] );
+			if ( i[j] == '0' )
+				MapOfZeroes.push_back( i );
 			else
-				MapOfOnes.push_back( ResultMap[i] );
+				MapOfOnes.push_back( i );
 		}
 
 		ResultMap.clear();
@@ -241,7 +241,7 @@ unsigned long long CalculateLifeSupportRating()
 	int i = 0, j = 0;
 	while ( std::getline( fin, line ) )
 	{
-		if ( line.size() > 0 )
+		if ( line.empty() == false )
 		{
 			{
 				if ( line[j] == '0' )
