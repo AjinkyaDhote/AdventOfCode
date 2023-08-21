@@ -3,7 +3,7 @@
 #include "../Header Files/Source.h"
 #include "../../Utilities.h"
 
-void Advent::Solutions2023::CalorieCounting()
+void Advent::Solutions2022::CalorieCounting()
 {
 	printf("CountingCalories\n");
 	std::string inputFilePath = R"(..\AdventOfCode\2022\Input\CalorieCounting.txt)";
@@ -40,7 +40,7 @@ void Advent::Solutions2023::CalorieCounting()
 	}
 		
 	
-	std::cout << "The highest amount of calories carried by the elf are " << previousCalorieCount << "\n";
+	std::cout << "The highest amount of calories carried by the elf are " << previousCalorieCount << "\n\n";
 	Utilities::CloseFile( file );
 }
 

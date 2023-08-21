@@ -559,6 +559,7 @@ std::vector<int> CalculateBingoScore()
 
 int main()
 {
-	Advent::Solutions2023::CalorieCounting();
+	Advent::Solutions2022::CalorieCounting();
+	Advent::Solutions2022::RockPaperScissors();
 	return 0;
 }

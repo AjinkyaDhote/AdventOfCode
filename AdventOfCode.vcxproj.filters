@@ -42,6 +42,9 @@
     <ClCompile Include="2022\Source Files\CalorieCounting.cpp">
       <Filter>2022\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="2022\Source Files\RockPaperScissors.cpp">
+      <Filter>2022\Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Input1.txt" />

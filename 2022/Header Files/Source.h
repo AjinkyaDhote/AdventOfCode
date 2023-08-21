@@ -6,7 +6,7 @@
 
 namespace Advent
 {
-	class Solutions2023
+	class Solutions2022
 	{
 	public:
 		static void CalorieCounting();
